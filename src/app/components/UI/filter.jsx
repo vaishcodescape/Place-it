@@ -1,7 +1,26 @@
 'use client';
 
-const jobTypes = ['Full Time', 'Part Time', 'Internship', 'Remote'];
-const locations = ['Bangalore', 'Delhi', 'Mumbai', 'Chennai', 'Hyderabad', 'Remote'];
+const jobTypes = ['Full-time', 'Part-time', 'Contract', 'Freelance', 'Internship'];
+const locations = [
+  'Worldwide', 
+  'USA Only', 
+  'UK Only', 
+  'Europe', 
+  'Americas', 
+  'APAC', 
+  'Africa', 
+  'Remote',
+  'India',
+  'Bangalore',
+  'Mumbai',
+  'Delhi',
+  'Hyderabad',
+  'Chennai',
+  'Pune',
+  'Kolkata',
+  'Noida',
+  'Gurgaon'
+];
 
 export default function Filter({ jobType, onJobTypeChange, location, onLocationChange }) {
   return (

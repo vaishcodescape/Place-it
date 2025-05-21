@@ -4,10 +4,12 @@ import Link from 'next/link';
 export default function Navbar() {
     return (
         <nav className="w-full flex items-center justify-between px-8 py-4 border-b border-white/10 bg-black/80 backdrop-blur-md shadow-md animate-fade-in-down">
-            <div className="flex items-center gap-2 text-2xl font-bold tracking-tight">
+            <Link href="/" className="flex items-center gap-2 text-2xl font-bold tracking-tight">
                 <FaProductHunt className="text-orange-400 drop-shadow-md" />
-                Place It
-            </div>
+                <div className="text-white text-2xl font-bold tracking-tight">
+                    Place It
+                </div>
+            </Link>
             <div className="flex gap-8 text-base font-medium">
                 <Link href="/job_search" className="flex items-center gap-2 hover:underline underline-offset-4 transition-colors duration-200 hover:text-gray-300">
                     <FaBriefcase className="text-lg" />
